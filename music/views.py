@@ -19,4 +19,4 @@ def detail(request, album_id):
     except Album.DoesNotExist:
         raise Http404("Album Doesnt Exist")
 
-    return render(request, 'music/detail.html', {'album' : album})
+    return render(request, 'music/detail.html', {'album': album})
